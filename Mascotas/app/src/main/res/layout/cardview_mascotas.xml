@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascotaCV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgFotoCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/llama"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/HuesoBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hueson"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:id="@+id/tvNombreCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pnombre"
+                android:textSize="@dimen/nombre_cardview"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/separacion"
+                />
+
+            <ImageView
+                android:id="@+id/HuesoAma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/huesoa"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:id="@+id/tvHuesosCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phuesos"
+                android:textSize="@dimen/nombre_cardview"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
